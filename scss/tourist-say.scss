@@ -1,7 +1,22 @@
 .tourist-say {
-	width: 100%;
-	height: 734px;
-	background-image: url("../img/our-tourist-say-background.png");	
-	background-size: cover;
-	background-repeat: no-repeat;
+	width: 					100%;
+	height: 				734px;
+	background-image: 		url("../img/our-tourist-say-background.png");	
+	background-size: 		cover;
+	background-repeat: 		no-repeat;
+	display:				flex;
+	flex-direction: 		column;
+	gap:					96px;
+	justify-content: 		center;
+	align-items:			center;
+
+	&__title {
+		color: 				#fff;
+		font-family: 		'aleolight', Arial, sans-serif;
+	}
+
+	&__content {
+		display:			flex;
+		gap: 				50px;
+	}
 }

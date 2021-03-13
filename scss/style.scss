@@ -1,4 +1,21 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff2') format('woff2'),
+        url('../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 	'aleolight';
+    src: 			url('../font/Aleo-Font/wfk/aleo-light-webfont-webfont.woff2') format('woff2'),
+					url('../font/Aleo-Font/wfk/aleo-light-webfont-webfont.woff') format('woff');
+    font-weight: 	normal;
+    font-style: 	normal;
+}
+
 @import "header";
 @import "why-choose";
 @import "how-it-works";
@@ -7,6 +24,8 @@
 @import "footer";
 @import "common.blocks/info-block";
 @import "common.blocks/linkbutton";
+@import "common.blocks/menu-bar";
+@import "common.blocks/logo";
 
 body {
     box-sizing: border-box;
