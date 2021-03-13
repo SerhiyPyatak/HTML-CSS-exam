@@ -1,63 +1,30 @@
-@import "../variables";
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff2') format('woff2'),
+        url('../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 .linkbutton {
     display:                flex;
-    justify-content: center;
-    align-items: center;
-    height:                 50px;
-    width:                  200px;
-    background-color:       rgb(255, 96, 51);
-    margin:                 40px 0;
-    border:                 1px solid rgb(255, 96, 51);
-    box-shadow:             0px 2px 4px rgb(154, 154, 156);
+    justify-content:        center;
+    align-items:            center;
+    height:                 60px;
+    width:                  227px;
+    background-color:       rgb(84, 116, 253);
+    margin:                 0;
+    border:                 none;
     text-decoration:        none;
     padding:                10px;
     box-sizing:             border-box;
     text-transform:         uppercase;
     color:                  #fff;
-    font-family:           $raleway;
-
-    &_tap {
-        background-color:       rgba(255, 255, 255, 0);
-        align-items:            flex-start;
-        width:                  24px;
-        height:                 40px;
-        border:                 2px solid rgb(44, 45, 45);
-        box-shadow:             none;
-        color:                  rgb(44, 45, 45);
-        font-size:              12px;
-        padding:                2px;
-        border-radius:          11px;
-        font-weight:            600;
-    }
-    
-    &_gallery {
-        background-color:       rgb(85, 133, 162);
-        border:                 none;
-        margin:                 30px auto 0 auto;
-    }
+    font-family: 			'aleoregular', Arial, sans-serif;
     
     &:hover {
-        transform:              scale(1.09, 1.09);
-    }
-
-    &_subscribe {
-        width:                  22%;
-        margin:                 0;
-        background-color:       rgb(150,185,44);
-        border: none;
-        display:inline-block;
+        transform:           scale(1.09, 1.09);
+        transition:          .2s ease-in;
     }
 }
-
-@media (max-width: 992px) {  }
-@media (max-width: 768px) { 
-    .linkbutton {
-        &_subscribe {
-            width: 32%;
-            height: 40px;
-        }
-    }
- }
-@media (min-width: 576px) {  }
 

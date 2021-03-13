@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -505,20 +506,24 @@ template {
   transition: 0.2s ease-in;
 }
 
-.spain-lounge {
+.grand-spain {
   width: 100%;
   height: 700px;
   background-image: url("../img/grand-spain-background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-top: 5%;
+  box-sizing: border-box;
+  color: #fff;
 }
-
-.spain-rock {
-  width: 100%;
-  height: 700px;
+.grand-spain_rock {
   background-image: url("../img/grand-spain-red-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  justify-content: flex-end;
+  padding-right: 10%;
 }
 
 .tourist-say {
@@ -533,6 +538,56 @@ template {
   width: 100%;
   height: 265px;
   background-color: #232323;
+}
+
+.info-block {
+  width: 541px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  padding: 50px 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.info-block__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 33px;
+}
+.info-block__title_pre {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.info-block__descript {
+  padding-bottom: 50px;
+}
+
+@font-face {
+  font-family: "aleoregular";
+  src: url("../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff2") format("woff2"), url("../../font/Aleo-Font/wfk/aleo-regular-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.linkbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 227px;
+  background-color: #5474fd;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "aleoregular", Arial, sans-serif;
+}
+.linkbutton:hover {
+  transform: scale(1.09, 1.09);
+  transition: 0.2s ease-in;
 }
 
 body {
