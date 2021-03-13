@@ -1,0 +1,111 @@
+@import "../variables";
+
+.c-form {
+    width:                  500px;
+    height:                 447px;
+    display:                flex;
+    flex-direction:         column;
+    gap:                    15px;
+    font-family:           $raleway;
+
+    &__textfield {
+        height:                 50px;
+        border:                 none;
+        background-color:       rgba(99, 208, 212, 0.6);
+        padding:                0 20px;
+        font-size:              15px;
+        color:                  #fff;
+        outline:                none;
+    }
+
+    &__textfield::placeholder {
+        color:                  #fff;
+    }
+
+    &__textfield:focus {
+        background-color:       rgba(0, 196, 196, 1);
+        border-left:            4px solid rgb(53, 91, 130);
+        font-weight:            bold;
+    }
+    
+    &__textarea {
+        height:                 250px;
+        border:                 none;
+        background-color:       rgba(99, 208, 212, 0.6);
+        padding:                20px;
+        font-size:              15px;
+        color:                  #fff;
+        outline:                none;
+    }
+    
+    &__textarea::placeholder {
+        color:                  #fff;
+    }
+    
+    &__textarea:focus {
+        background-color:       rgba(0, 196, 196, 1);
+        border-left:            4px solid rgb(53, 91, 130);
+        font-weight:            bold;
+    }
+    
+    &_subscribe {
+        padding-left:           150px;
+        width:                  51%;
+        height:                 65px;
+        flex-direction:         row;
+        margin-top:             30px;
+    }
+
+    &__textfield_subscribe {
+        width:                  74%;
+        padding:                0;
+        background-color:       #fff;
+        border:                 1px solid rgb(38, 38, 38);
+        padding-left:           25px;
+    }
+    
+    &__textfield_subscribe::placeholder {
+        color:                  rgb(189, 189, 189);
+    }
+    
+    &__textfield_subscribe:focus {
+        background-color:       #fff;
+        color:                  rgb(38, 38, 38);
+    }
+}
+
+@media (max-width: 992px) { 
+    .c-form {
+        &_subscribe {
+            padding-left: 70px;
+        }
+    }
+ }
+
+@media (max-width: 768px) { 
+    .c-form {
+        &_subscribe {
+            padding-left: 40px;
+        }
+
+        &__textfield_subscribe {
+            height: 40px;
+        }
+
+        &_contact-section {
+            width: 400px;
+        }
+    }
+ }
+
+@media (max-width: 576px) { 
+    .c-form {
+        &_subscribe {
+            width: 80%;
+        }
+
+        &_contact-section {
+            width: 300px;
+        }
+    }
+ }
