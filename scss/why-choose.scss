@@ -4,4 +4,25 @@
 	background-image: 			url("../img/why-choose-background.png");
 	background-repeat: 			no-repeat;
 	background-size: 			cover;
+	display:					flex;
+	justify-content:			center;
+	align-items:				center;
+	gap: 30px;
+
+	&__gallery {
+		display:				flex;
+		flex-direction: 		column;
+		gap: 					8px;
+		width:                  541px;
+		height:                 450px;
+
+		& img {
+			width: 				358px;
+			height:auto;
+
+			&:last-child {
+				align-self: flex-end;
+			}
+		}
+	}
 }

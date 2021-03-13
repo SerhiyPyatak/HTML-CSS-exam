@@ -462,6 +462,24 @@ template {
   background-image: url("../img/why-choose-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.why-choose__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 541px;
+  height: 450px;
+}
+.why-choose__gallery img {
+  width: 358px;
+  height: auto;
+}
+.why-choose__gallery img:last-child {
+  align-self: flex-end;
 }
 
 @font-face {
@@ -518,7 +536,6 @@ template {
   padding-left: 10%;
   padding-top: 5%;
   box-sizing: border-box;
-  color: #fff;
 }
 .grand-spain_rock {
   background-image: url("../img/grand-spain-red-background.png");
@@ -548,6 +565,7 @@ template {
   padding: 50px 30px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  color: #fff;
 }
 .info-block__title {
   text-transform: uppercase;
@@ -559,8 +577,17 @@ template {
   text-transform: capitalize;
   font-weight: 300;
 }
+.info-block__title_chooseus {
+  text-transform: capitalize;
+}
 .info-block__descript {
   padding-bottom: 50px;
+}
+.info-block__descript_chooseus {
+  padding-bottom: 40px;
+}
+.info-block_chooseus {
+  background-color: transparent;
 }
 
 @font-face {
