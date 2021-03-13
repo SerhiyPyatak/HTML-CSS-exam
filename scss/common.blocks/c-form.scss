@@ -1,17 +1,20 @@
-@import "../variables";
+//@import "../variables";
 
 .c-form {
-    width:                  500px;
-    height:                 447px;
+    width:                  655px;
+    height:                 54px;
     display:                flex;
-    flex-direction:         column;
-    gap:                    15px;
-    font-family:           $raleway;
+    justify-content:        space-between;
+    align-items:            center;
+    background-color:       #fff;
+    padding:                2px;
+    box-sizing:             border-box;
 
     &__textfield {
-        height:                 50px;
+        height:                 100%;
+        width:                  504px;
         border:                 none;
-        background-color:       rgba(99, 208, 212, 0.6);
+        background-color:       #fff;
         padding:                0 20px;
         font-size:              15px;
         color:                  #fff;

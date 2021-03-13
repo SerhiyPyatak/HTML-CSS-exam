@@ -8,10 +8,12 @@
     flex-direction:         column;
 
     &__slogan {
-        color: #fff;
+        color:              #fff;
         font-family: 		'Josefin Sans', sans-serif;
 		text-transform: 	capitalize;
-        letter-spacing: 2px;
+        letter-spacing:     2px;
+        margin:0;
+        padding:0;
     }
 
 }

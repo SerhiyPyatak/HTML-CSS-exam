@@ -477,6 +477,8 @@ template {
   font-family: "Josefin Sans", sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
 }
 
 .why-choose {
@@ -638,7 +640,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 50px;
   width: 227px;
   background-color: #5474fd;
   margin: 0;
@@ -653,6 +655,9 @@ template {
 .linkbutton:hover {
   transform: scale(1.09, 1.09);
   transition: 0.2s ease-in;
+}
+.linkbutton_subscribe {
+  width: 148px;
 }
 
 .menu-bar {
@@ -880,12 +885,103 @@ template {
   font-weight: 600;
   font-size: 10px;
 }
-.logo_hero {
+.logo__hero {
   font-size: 38px;
-  margin: 15px;
+  margin: 5px;
   padding: 0;
 }
 
+.c-form {
+  width: 655px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.c-form__textfield {
+  height: 100%;
+  width: 504px;
+  border: none;
+  background-color: #fff;
+  padding: 0 20px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+}
+.c-form__textfield::placeholder {
+  color: #fff;
+}
+.c-form__textfield:focus {
+  background-color: #00c4c4;
+  border-left: 4px solid #355b82;
+  font-weight: bold;
+}
+.c-form__textarea {
+  height: 250px;
+  border: none;
+  background-color: rgba(99, 208, 212, 0.6);
+  padding: 20px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+}
+.c-form__textarea::placeholder {
+  color: #fff;
+}
+.c-form__textarea:focus {
+  background-color: #00c4c4;
+  border-left: 4px solid #355b82;
+  font-weight: bold;
+}
+.c-form_subscribe {
+  padding-left: 150px;
+  width: 51%;
+  height: 65px;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.c-form__textfield_subscribe {
+  width: 74%;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #262626;
+  padding-left: 25px;
+}
+.c-form__textfield_subscribe::placeholder {
+  color: #bdbdbd;
+}
+.c-form__textfield_subscribe:focus {
+  background-color: #fff;
+  color: #262626;
+}
+
+@media (max-width: 992px) {
+  .c-form_subscribe {
+    padding-left: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .c-form_subscribe {
+    padding-left: 40px;
+  }
+  .c-form__textfield_subscribe {
+    height: 40px;
+  }
+  .c-form_contact-section {
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .c-form_subscribe {
+    width: 80%;
+  }
+  .c-form_contact-section {
+    width: 300px;
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0;
