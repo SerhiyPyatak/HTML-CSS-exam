@@ -941,6 +941,31 @@ template {
   padding: 2px;
   box-sizing: border-box;
   margin-top: 50px;
+  /*
+  &_subscribe {
+      padding-left:           150px;
+      width:                  51%;
+      height:                 65px;
+      flex-direction:         row;
+      margin-top:             30px;
+  }
+
+  &__textfield_subscribe {
+      width:                  74%;
+      padding:                0;
+      background-color:       #fff;
+      border:                 1px solid rgb(38, 38, 38);
+      padding-left:           25px;
+  }
+
+  &__textfield_subscribe::placeholder {
+      color:                  rgb(189, 189, 189);
+  }
+
+  &__textfield_subscribe:focus {
+      background-color:       #fff;
+      color:                  rgb(38, 38, 38);
+  }*/
 }
 .c-form__textfield {
   height: 100%;
@@ -963,67 +988,17 @@ template {
   border-left: 4px solid #355b82;
   text-align: center;
 }
-.c-form__textarea {
-  height: 250px;
-  border: none;
-  background-color: rgba(99, 208, 212, 0.6);
-  padding: 20px;
-  font-size: 15px;
-  color: #fff;
-  outline: none;
-}
-.c-form__textarea::placeholder {
-  color: #fff;
-}
-.c-form__textarea:focus {
-  background-color: #00c4c4;
-  border-left: 4px solid #355b82;
-  font-weight: bold;
-}
-.c-form_subscribe {
-  padding-left: 150px;
-  width: 51%;
-  height: 65px;
-  flex-direction: row;
-  margin-top: 30px;
-}
-.c-form__textfield_subscribe {
-  width: 74%;
-  padding: 0;
-  background-color: #fff;
-  border: 1px solid #262626;
-  padding-left: 25px;
-}
-.c-form__textfield_subscribe::placeholder {
-  color: #bdbdbd;
-}
-.c-form__textfield_subscribe:focus {
-  background-color: #fff;
-  color: #262626;
-}
 
-@media (max-width: 992px) {
-  .c-form_subscribe {
-    padding-left: 70px;
-  }
-}
 @media (max-width: 768px) {
-  .c-form_subscribe {
-    padding-left: 40px;
+  .c-form {
+    flex-direction: column;
+    height: auto;
+    background-color: transparent;
+    gap: 20px;
+    width: 67%;
   }
-  .c-form__textfield_subscribe {
-    height: 40px;
-  }
-  .c-form_contact-section {
-    width: 400px;
-  }
-}
-@media (max-width: 576px) {
-  .c-form_subscribe {
-    width: 80%;
-  }
-  .c-form_contact-section {
-    width: 300px;
+  .c-form__textfield {
+    width: 100%;
   }
 }
 .footer {
