@@ -1032,6 +1032,20 @@ template {
   justify-content: center;
   align-items: center;
 }
+.footer__socnets {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 34px;
+  font-size: 18px;
+}
+.footer__socnets a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__socnets a:hover {
+  color: #5474fd;
+}
 
 body {
   box-sizing: border-box;
