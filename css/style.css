@@ -481,6 +481,10 @@ template {
   font-weight: 300;
   letter-spacing: 4px;
 }
+.welcome__slogan_footer {
+  letter-spacing: 1px;
+  font-size: 17px;
+}
 .welcome__footer {
   margin-top: 120px;
   display: flex;
@@ -922,6 +926,10 @@ template {
   padding: 0;
   letter-spacing: 9px;
 }
+.logo__footer {
+  font-size: 22px;
+  letter-spacing: 5px;
+}
 
 .c-form {
   width: 655px;
@@ -1018,6 +1026,13 @@ template {
     width: 300px;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

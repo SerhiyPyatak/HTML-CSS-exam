@@ -1,18 +1,7 @@
-@import "../variables.scss";
-
-.webpage-footer {
+.footer {
     display:                flex;
-    justify-content:        space-around;
+    flex-direction:         column;
+    justify-content:        center;
     align-items:            center;
-    color:                  rgb(126, 126, 126);
-    height:                 90px;
-    background-color:       rgb(38, 38, 38);
-    font-family:            $raleway;
-    font-size:              15px;
-
-    &__slogan span {
-        color:                  rgb(255, 43, 88);
-        font-weight:            700;
-    }
 }
 
