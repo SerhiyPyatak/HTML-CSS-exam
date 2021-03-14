@@ -476,9 +476,10 @@ template {
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   text-transform: capitalize;
-  letter-spacing: 2px;
   margin: 0;
   padding: 0;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
 
 .why-choose {
@@ -651,13 +652,22 @@ template {
   text-transform: uppercase;
   color: #fff;
   font-family: "aleoregular", Arial, sans-serif;
+  transition: 0.2s ease-in-out;
+  gap: 10px;
 }
 .linkbutton:hover {
   transform: scale(1.09, 1.09);
-  transition: 0.2s ease-in;
 }
 .linkbutton_subscribe {
   width: 148px;
+  cursor: pointer;
+}
+.linkbutton_subscribe:hover {
+  background-color: #2095c4;
+  transform: none;
+}
+.linkbutton__icon {
+  font-size: 1.2em;
 }
 
 .menu-bar {
@@ -889,6 +899,7 @@ template {
   font-size: 38px;
   margin: 5px;
   padding: 0;
+  letter-spacing: 9px;
 }
 
 .c-form {
@@ -900,6 +911,7 @@ template {
   background-color: #fff;
   padding: 2px;
   box-sizing: border-box;
+  margin-top: 50px;
 }
 .c-form__textfield {
   height: 100%;
@@ -907,17 +919,20 @@ template {
   border: none;
   background-color: #fff;
   padding: 0 20px;
-  font-size: 15px;
-  color: #fff;
+  font-size: 18px;
+  color: #05101c;
   outline: none;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 .c-form__textfield::placeholder {
-  color: #fff;
+  color: #999999;
 }
 .c-form__textfield:focus {
-  background-color: #00c4c4;
   border-left: 4px solid #355b82;
-  font-weight: bold;
+  text-align: center;
 }
 .c-form__textarea {
   height: 250px;

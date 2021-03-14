@@ -13,14 +13,25 @@
     text-transform:         uppercase;
     color:                  #fff;
     font-family: 			'aleoregular', Arial, sans-serif;
+    transition:          .2s ease-in-out;
+    gap: 10px;
     
     &:hover {
-        transform:           scale(1.09, 1.09);
-        transition:          .2s ease-in;
+        transform:            scale(1.09, 1.09);
     }
 
     &_subscribe {
-        width: 148px;
+        width:          148px;
+        cursor:         pointer;
+
+        &:hover {
+            background-color:       rgb(32, 149, 196);
+            transform:              none;
+        }
+    }
+
+    &__icon {
+        font-size:      1.2em;
     }
 }
 
