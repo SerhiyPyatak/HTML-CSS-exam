@@ -493,6 +493,11 @@ template {
   gap: 15px;
 }
 
+@media (max-width: 380px) {
+  .welcome__slogan {
+    font-size: 16px;
+  }
+}
 .why-choose {
   width: 100%;
   height: 690px;
@@ -931,6 +936,11 @@ template {
   letter-spacing: 5px;
 }
 
+@media (max-width: 380px) {
+  .logo__hero {
+    font-size: 25px;
+  }
+}
 .c-form {
   width: 655px;
   height: 54px;
@@ -999,6 +1009,14 @@ template {
   }
   .c-form__textfield {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .c-form__textfield {
+    font-size: 15px;
+  }
+  .c-form__textfield::placeholder {
+    font-size: 15px;
   }
 }
 .footer {

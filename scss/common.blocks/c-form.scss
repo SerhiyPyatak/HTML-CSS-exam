@@ -72,3 +72,18 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .c-form {
+        &__textfield {
+            font-size: 15px;
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    
+}
