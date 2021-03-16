@@ -17,3 +17,13 @@
 		padding-right: 			10%;
 	}
 }
+
+@media(max-width:650px) {
+	.grand-spain {
+		padding: 				5% 0;
+
+		& .info-block {
+			width: 100%;
+		}
+	}
+}
